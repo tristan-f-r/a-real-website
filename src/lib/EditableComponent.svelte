@@ -1,11 +1,16 @@
 <script lang="ts" module>
-    export interface ComponentData {
-        content: string;
-        position: {
-            x: number;
-            y: number;
-        };
-    }
+    import { string, object, number, type InferInput } from 'valibot';
+
+
+    export const ComponentDataSchema = object({
+        content: string(),
+        position: object({
+            x: number(),
+            y: number()
+        })
+    });
+
+    export type ComponentData = InferInput<typeof ComponentDataScheme>;
 </script>
 
 <script lang="ts">
