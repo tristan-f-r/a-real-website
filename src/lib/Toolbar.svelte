@@ -23,7 +23,7 @@
     <button onclick={() => components.push(structuredClone(defaultComponent))}>new component</button>
     <button onclick={exportAsHtml}>export as html</button>
     <button onclick={exportAsJson}>export as json</button>
-    <button>advanced settings</button>
+    <button>settings</button>
 </div>
 
 <style>

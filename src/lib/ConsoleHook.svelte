@@ -11,7 +11,7 @@
 
     onMount(() => {
         console.log("you can also update these components programmatically!");
-        console.log("use the getComponents() and z(...) utility functions.");
+        console.log("use the getComponents() and setComponents(...) utility functions.");
 
         (globalThis as any).getComponents = function() {
             return $state.snapshot(components);
