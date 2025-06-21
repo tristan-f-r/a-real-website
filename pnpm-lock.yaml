@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      downloadjs:
+        specifier: ^1.4.7
+        version: 1.4.7
     devDependencies:
       '@eslint/compat':
         specifier: ^1.2.5
@@ -633,6 +637,9 @@ packages:
 
   devalue@5.1.1:
     resolution: {integrity: sha512-maua5KUiapvEwiEAe+XnlZ3Rh0GD+qI1J/nb9vrJc3muPXvcF/8gXYTWF76+5DAqHyDUtOIImEuo0YKE9mshVw==}
+
+  downloadjs@1.4.7:
+    resolution: {integrity: sha512-LN1gO7+u9xjU5oEScGFKvXhYf7Y/empUIIEAGBs1LzUq/rg5duiDrkuH5A2lQGd5jfMOb9X9usDa2oVXwJ0U/Q==}
 
   esbuild@0.25.5:
     resolution: {integrity: sha512-P8OtKZRv/5J5hhz0cUAdu/cLuPIKXpQl1R9pZtvmHWQvrAUVd0UNIPT4IB4W3rNOqVO0rlqHmCIbSwxh/c9yUQ==}
@@ -1650,6 +1657,8 @@ snapshots:
   deepmerge@4.3.1: {}
 
   devalue@5.1.1: {}
+
+  downloadjs@1.4.7: {}
 
   esbuild@0.25.5:
     optionalDependencies:
