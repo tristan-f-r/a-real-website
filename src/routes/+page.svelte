@@ -15,7 +15,10 @@
 <ConsoleHook bind:components={components} />
 
 <main>
-    {#each components as { content }, i}
-        <EditableComponent {content} bind:position={components[i].position} />
+    {#each components as _, i}
+        <EditableComponent
+            bind:content={components[i].content}
+            bind:position={components[i].position}
+        />
     {/each}
 </main>
