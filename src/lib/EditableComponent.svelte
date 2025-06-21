@@ -1,7 +1,6 @@
 <script lang="ts" module>
     import { string, object, number, type InferInput } from 'valibot';
 
-
     export const ComponentDataSchema = object({
         content: string(),
         position: object({
@@ -10,7 +9,7 @@
         })
     });
 
-    export type ComponentData = InferInput<typeof ComponentDataScheme>;
+    export type ComponentData = InferInput<typeof ComponentDataSchema>;
 </script>
 
 <script lang="ts">
